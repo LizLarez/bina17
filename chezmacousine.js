@@ -1,5 +1,5 @@
 
 
 function validateForm(form) {
-  window.location.href = './puzzle.html';
+  window.location.href = './morse.html';
 }
