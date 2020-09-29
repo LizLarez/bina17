@@ -19,5 +19,12 @@
         </div>
       </div>
     </div>
+    <canvas id="my-canvas"></canvas>
+    <script src="confetti.js"></script>
+    <script>
+      var confettiSettings = { target: 'my-canvas' };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
 </body>
 </html>

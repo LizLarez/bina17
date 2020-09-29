@@ -69,3 +69,10 @@
   #morse {
     margin: 40px 10px 20px 10px;
   }
+
+  #my-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+  }

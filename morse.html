@@ -32,6 +32,13 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="morse.js"></script>
+    <canvas id="my-canvas"></canvas>
+    <script src="confetti.js"></script>
+    <script>
+      var confettiSettings = { target: 'my-canvas' };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      confetti.render();
+    </script>
 
 </body>
 </html>
