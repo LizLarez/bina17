@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <h1>PARABÉNS!!</h1>
+        
+          <h3>Faz este puzzle para descobrires para onde vais a seguir.</h3>
+        </div>
+
+        <div class="row">
+            <img id="imgPuzzle" onLoad="snapfit.add(this, {level:2, bwide:2}) && snapfit.admix(this,true);" width="320" height="320" src="https://lh3.googleusercontent.com/eDnsskevkXs9VstZnZyMw5J8TH8j_YQw8cVwYBlt5bHtvVM1thslTuOTBSpufaI9PLA">
+        </div>
+
+          <div class="row"> 
+            <form id="form_container" action="" name="submit" onsubmit="return validateForm(this)">
+              <div class="form-group">
+                <label name="fAnswer">Resposta</label>
+                <input class="form-control" id="resposta">
+              </div>  
+              <button type="submit" class="btn btn-primary">Seguinte</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="http://www.netzgesta.de/snapfit/snapfit.js"></script>
+    
+    <script src="puzzle.js"></script>
+
+
+</body>
+</html>

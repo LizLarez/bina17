@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="cruzadas.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>PARABÉNS!!</h1>
+    
+      <h3>Faz estas palavras-cruzadas para descobrires para onde vais a seguir.</h3>
+    </div>
+      
+    <div class="row">
+      <div id="puzzle_container">
+        <table id="puzzle">
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div id="hints_container">
+        <h3>Vertical</h3>
+        <div id="vertical_hints_container"></div>
+        <h3>Horizontal</h3>
+        <div id="horizontal_hints_container"></div>
+      </div>
+    </div>
+
+    <div class="row"> 
+      <form id="form_container" action="" name="submit" onsubmit="return validateForm(this)">
+        <div class="form-group">
+          <label name="fAnswer">Resposta</label>
+          <input class="form-control" id="resposta">
+        </div>  
+        <button type="submit" class="btn btn-primary">Seguinte</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="cruzadas.js"></script>
+      
+      
+</body>
+</html>

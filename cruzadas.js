@@ -253,3 +253,16 @@ var grid =
     }
   }
   
+  function validateForm(form) {
+    var x = form[0].value;
+    if (x.toLowerCase().trim() != "chez ma cousine") {
+      alert("Resposta errada!");
+    } else {
+      window.location.href = './puzzle.html';
+    }
+  }
+
+  
+$("#form_container").submit(function(e) {
+  e.preventDefault();
+});
