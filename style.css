@@ -68,6 +68,12 @@
 
   #morse {
     margin: 40px 10px 20px 10px;
+    font-family: monospace;
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
   }
 
   #my-canvas {
@@ -75,4 +81,5 @@
       top: 0;
       left: 0;
       z-index: -100;
+      
   }
