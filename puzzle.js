@@ -2,10 +2,10 @@
 
 function validateForm(form) {
   var x = form[0].value;
-  if (x.toLowerCase().trim() != "laduree" && x.toLowerCase().trim() != "ladurée") {
+  if (x.toLowerCase().trim() != "keira") {
     alert("Resposta errada!");
   } else {
-    window.location.href = './puzzle.html';
+    window.location.href = './keira.html';
   }
 }
 
@@ -14,3 +14,7 @@ function shuffle() {
 }
 
 window.onload = shuffle
+
+$("#form_container").submit(function(e) {
+  e.preventDefault();
+});
